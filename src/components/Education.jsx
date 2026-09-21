@@ -52,24 +52,29 @@ export default function Education() {
                 )}
               </div>
 
-              {/* Details & Editable fields */}
+              {/* Details & Info fields */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 text-xs font-mono">
                 <div className="p-3 rounded-lg bg-slate-900/60 border border-slate-800">
                   <span className="text-slate-500 block mb-1 flex items-center gap-1.5">
                     <Building2 className="w-3.5 h-3.5 text-cyan-400" />
                     Institution
                   </span>
-                  <span className={edu.institution.includes('Update') ? 'text-amber-400/90 italic' : 'text-slate-200 font-semibold'}>
+                  <span className="text-slate-200 font-semibold block">
                     {edu.institution}
                   </span>
+                  {edu.location && (
+                    <span className="text-[10px] text-slate-400 mt-0.5 block">
+                      {edu.location}
+                    </span>
+                  )}
                 </div>
 
                 <div className="p-3 rounded-lg bg-slate-900/60 border border-slate-800">
                   <span className="text-slate-500 block mb-1 flex items-center gap-1.5">
                     <Calendar className="w-3.5 h-3.5 text-indigo-400" />
-                    Graduation Year
+                    Duration / Period
                   </span>
-                  <span className={edu.graduationYear.includes('Update') ? 'text-amber-400/90 italic' : 'text-slate-200 font-semibold'}>
+                  <span className="text-slate-200 font-semibold block">
                     {edu.graduationYear}
                   </span>
                 </div>
@@ -77,9 +82,9 @@ export default function Education() {
                 <div className="p-3 rounded-lg bg-slate-900/60 border border-slate-800">
                   <span className="text-slate-500 block mb-1 flex items-center gap-1.5">
                     <Award className="w-3.5 h-3.5 text-emerald-400" />
-                    Academic Score / CGPA
+                    Academic Score
                   </span>
-                  <span className={edu.cgpa.includes('Update') ? 'text-amber-400/90 italic' : 'text-slate-200 font-semibold'}>
+                  <span className="text-cyan-300 font-bold block">
                     {edu.cgpa}
                   </span>
                 </div>

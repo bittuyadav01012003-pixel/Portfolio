@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Terminal, ArrowUpRight } from 'lucide-react';
+import { Menu, X, Terminal, ArrowUpRight, Download } from 'lucide-react';
 import { portfolio } from '../data/portfolio';
 
 const navItems = [
@@ -98,8 +98,18 @@ export default function Navbar() {
           })}
         </nav>
 
-        {/* Quick Contact CTA */}
-        <div className="hidden lg:flex items-center">
+        {/* Quick Actions: Resume & Contact CTA */}
+        <div className="hidden lg:flex items-center gap-2">
+          <a
+            href={portfolio.personal.resumeUrl}
+            download="Bittu_Kumar_Resume.png"
+            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold bg-cyan-950/70 hover:bg-cyan-900/60 border border-cyan-700/60 text-cyan-300 hover:text-cyan-200 transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
+            title="Download Bittu Kumar's Resume"
+          >
+            <Download className="w-3.5 h-3.5" />
+            <span>Resume</span>
+          </a>
+
           <a
             href="#contact"
             onClick={(e) => handleNavClick(e, '#contact')}
@@ -148,7 +158,16 @@ export default function Navbar() {
             })}
           </div>
 
-          <div className="pt-3 border-t border-slate-800/80">
+          <div className="pt-3 border-t border-slate-800/80 space-y-2">
+            <a
+              href={portfolio.personal.resumeUrl}
+              download="Bittu_Kumar_Resume.png"
+              className="flex items-center justify-center gap-2 w-full py-2.5 rounded-lg text-sm font-semibold bg-cyan-950/80 hover:bg-cyan-900/80 text-cyan-300 border border-cyan-700/60"
+            >
+              <Download className="w-4 h-4" />
+              <span>Download Resume</span>
+            </a>
+
             <a
               href="#contact"
               onClick={(e) => handleNavClick(e, '#contact')}

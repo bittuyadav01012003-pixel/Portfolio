@@ -14,7 +14,8 @@ export const portfolio = {
     github: "https://github.com/bittuyadav01012003-pixel",
     linkedin: "https://www.linkedin.com/in/bittu-kumar-323454399/",
     status: "Available for Software Engineering Roles & Internships",
-    location: "India"
+    location: "India",
+    resumeUrl: "/Bittu_Kumar_Resume.png"
   },
 
   about: {
@@ -245,11 +246,30 @@ export const portfolio = {
   education: [
     {
       degree: "Bachelor of Technology",
-      branch: "Computer Science",
-      institution: "Update Institution",
-      graduationYear: "Update Year",
-      cgpa: "Update CGPA",
+      branch: "Computer Science and Engineering",
+      institution: "Lovely Professional University",
+      location: "Phagwara, Punjab",
+      graduationYear: "Aug' 25 – Present",
+      cgpa: "5.4 CGPA",
       status: "Currently Pursuing"
+    },
+    {
+      degree: "Intermediate (12th)",
+      branch: "Science Stream",
+      institution: "Ram Swarth Singh",
+      location: "Patna, Bihar",
+      graduationYear: "Jun' 21 – Mar' 23",
+      cgpa: "68%",
+      status: "Completed"
+    },
+    {
+      degree: "Matriculation (10th)",
+      branch: "General Studies",
+      institution: "Sufia Public School",
+      location: "Siwan, Bihar",
+      graduationYear: "Jun' 19 – Mar' 21",
+      cgpa: "60%",
+      status: "Completed"
     }
   ],
 
@@ -257,7 +277,7 @@ export const portfolio = {
     {
       name: "Programming Fundamentals using Python - Part 1",
       organization: "Infosys Springboard",
-      date: "June 29, 2026",
+      date: "Jun 29, 2026",
       icon: "Award",
       verificationUrl: "https://verify.onwingspan.com",
       image: "/certificates/infosys-python-part1.png",
@@ -266,7 +286,7 @@ export const portfolio = {
     {
       name: "Programming Fundamentals using Python - Part 2",
       organization: "Infosys Springboard",
-      date: "July 19, 2026",
+      date: "Jul 19, 2026",
       icon: "Award",
       verificationUrl: "https://verify.onwingspan.com",
       image: "/certificates/infosys-python-part2.png",
@@ -275,16 +295,32 @@ export const portfolio = {
     {
       name: "C++ Programming",
       organization: "Cipher Schools",
-      date: "Verified Certificate",
+      date: "Jul 2026",
       icon: "ShieldCheck",
+      verificationUrl: "",
+      image: null
+    },
+    {
+      name: "Python Certificate",
+      organization: "Infosys",
+      date: "Mar 2026",
+      icon: "Award",
       verificationUrl: "",
       image: null
     },
     {
       name: "Database Management System",
       organization: "Infosys",
-      date: "Verified Certificate",
+      date: "Nov 2025",
       icon: "Database",
+      verificationUrl: "",
+      image: null
+    },
+    {
+      name: "WNS Certificate",
+      organization: "CDP",
+      date: "Jun 2026",
+      icon: "ShieldCheck",
       verificationUrl: "",
       image: null
     }

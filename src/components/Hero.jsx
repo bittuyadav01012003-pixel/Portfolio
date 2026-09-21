@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, ArrowRight, Sparkles, Terminal, Code2, CheckCircle2 } from 'lucide-react';
+import { Mail, ArrowRight, Sparkles, Terminal, Code2, CheckCircle2, Download } from 'lucide-react';
 import { Github, Linkedin } from './Icons';
 import { portfolio } from '../data/portfolio';
 
@@ -51,7 +51,7 @@ export default function Hero() {
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-wrap items-center gap-4 pt-2 w-full sm:w-auto">
+            <div className="flex flex-wrap items-center gap-3.5 pt-2 w-full sm:w-auto">
               <button
                 type="button"
                 onClick={() => scrollToSection('projects')}
@@ -61,10 +61,20 @@ export default function Hero() {
                 <ArrowRight className="w-4 h-4" />
               </button>
 
+              <a
+                href={personal.resumeUrl}
+                download="Bittu_Kumar_Resume.png"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl font-semibold text-sm bg-cyan-950/70 hover:bg-cyan-900/60 text-cyan-300 hover:text-cyan-200 border border-cyan-700/60 hover:border-cyan-500 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 cursor-pointer shadow-md shadow-cyan-950/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
+                title="Download Bittu Kumar's Resume"
+              >
+                <Download className="w-4 h-4" />
+                <span>Download Resume</span>
+              </a>
+
               <button
                 type="button"
                 onClick={() => scrollToSection('contact')}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl font-semibold text-sm bg-slate-900/80 hover:bg-slate-800 text-slate-200 hover:text-white border border-slate-700/80 hover:border-slate-600 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl font-semibold text-sm bg-slate-900/80 hover:bg-slate-800 text-slate-200 hover:text-white border border-slate-700/80 hover:border-slate-600 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
               >
                 <span>Let's Connect</span>
                 <Sparkles className="w-4 h-4 text-cyan-400" />
