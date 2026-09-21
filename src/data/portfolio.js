@@ -166,22 +166,28 @@ export const portfolio = {
     ],
 
     codingStats: {
-      problemsSolved: "Update Here",
-      contestRating: "Update Here"
+      platform: "CodeChef",
+      contestRating: "829 (Div 4)",
+      highestRating: "829 (1★)",
+      globalRank: "181,264",
+      countryRank: "175,599",
+      username: "lonely_moss_25"
     },
 
     platforms: [
+      {
+        name: "CodeChef",
+        username: "lonely_moss_25",
+        url: "https://www.codechef.com/users/lonely_moss_25",
+        rating: "829",
+        status: "Verified (829)",
+        icon: "Award"
+      },
       {
         name: "LeetCode",
         url: "", // Set actual profile URL when available
         status: "Add Profile",
         icon: "Code"
-      },
-      {
-        name: "CodeChef",
-        url: "", // Set actual profile URL when available
-        status: "Add Profile",
-        icon: "Award"
       },
       {
         name: "Codeforces",
